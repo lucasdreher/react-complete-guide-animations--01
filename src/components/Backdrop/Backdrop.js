@@ -4,7 +4,8 @@ import './Backdrop.css';
 
 const backdrop = (props) => {
 	const cssClasses = [ 'Backdrop', props.show ? 'BackdropOpen' : 'BackdropClosed' ];
-	return <div className={cssClasses.join('')} />;
+
+	return <div className={cssClasses.join(' ')} />;
 };
 
 export default backdrop;
